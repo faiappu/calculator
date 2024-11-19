@@ -1,0 +1,93 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+/* Body Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Default font */
+    line-height: 1.6; /* Improves readability */
+    background-color: #f4f4f4; /* Light background color */
+    color: #333; /* Dark text color */
+    padding: 20px; /* Adds some padding around the content */
+}
+
+/* Responsive Typography */
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5em; /* Space below headings */
+}
+
+h1 {
+    font-size: 2em; /* Responsive font size for h1 */
+}
+
+h2 {
+    font-size: 1.75em; /* Responsive font size for h2 */
+}
+
+h3 {
+    font-size: 1.5em; /* Responsive font size for h3 */
+}
+
+/* Links */
+a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Removes underline */
+    transition: color 0.3s; /* Smooth color transition */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better accessibility */
+}
+
+/* Buttons */
+button {
+    font-family: inherit; /* Inherit font from body */
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Removes default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Container */
+.container {
+    max-width: 1200px; /* Maximum width for larger screens */
+    margin: 0 auto; /* Center the container */
+    padding: 20px; /* Padding around the container */
+}
+
+/* Flexbox Layout for Responsive Design */
+.flex {
+    display: flex;
+    justify-content: space-between; /* Space between items */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.5em; /* Smaller h1 on mobile */
+    }
+
+    h2 {
+        font-size: 1.25em; /* Smaller h2 on mobile */
+    }
+
+    .container {
+        padding: 10px; /* Reduce padding on mobile */
+    }
+
+    button {
+        width: 100%; /* Full-width buttons on mobile */
+        margin: 5px 0; /* Margin between buttons */
+    }
+}
